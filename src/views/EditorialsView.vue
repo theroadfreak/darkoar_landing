@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row mt-4 justify-content-center">
+    <div class="row pt-4 justify-content-center">
       <div
           v-for="campaign in campaigns"
           class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
@@ -22,7 +22,18 @@
 
 export default {
   name: 'EditorialsView',
-  components: {}
+  metaInfo() {
+    return {
+      title: "Darko AR | Editorials",
+      meta: [
+        {name: 'description', content: "Darko's editorial work"},
+        {property: 'og:title', content: "Darko AR | Editorials"},
+        {property: 'og:site_name', content: 'Darko AR'},
+        {property: 'og:type', content: 'website'},
+        {name: 'robots', content: 'index,follow'}
+      ]
+    }
+  }
 }
 </script>
 
@@ -51,7 +62,7 @@ const campaigns = ref([
     albumName: "matea-mateska"
   },
   {
-    name: 'Pixel Web',
+    name: 'Pixel',
     thumbnail: 'PixelWeb/cover.jpg',
     albumName: "pixel-web"
   },

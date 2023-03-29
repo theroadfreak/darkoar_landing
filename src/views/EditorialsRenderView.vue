@@ -1,13 +1,15 @@
 <template>
   <div class="container my-5">
     <div class="row">
-      <img
-          v-for="item in picturesToShow.pictures"
-          :src="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
-          :alt="item.picture"
-          class="col-12 mb-3"
-          :class="item.orientation === 'landscape' ? '' : 'col-md-6'"
-      >
+      <div v-for="item in picturesToShow.pictures"
+           class="col-12 mb-3"
+           :class="item.orientation === 'landscape' ? '' : 'col-md-6'">
+        <img
+            :src="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
+            :alt="item.picture"
+            class="w-100 h-auto"
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +32,7 @@ const albums = ref([
     name: 'enigma_antonjia_lokvenec',
     folder: 'Enigma/',
     pictures: [
-      {picture: 'Lokvenec_Lokvenec_00.jpg', orientation: 'landscape'},
+      {picture: 'Lokvenec_Lokvenec_00.jpg', orientation: ''},
       {picture: 'Lokvenec_Lokvenec_01.jpg', orientation: ''},
       {picture: 'Lokvenec_Lokvenec_02.jpg', orientation: ''},
       {picture: 'Lokvenec_Lokvenec_03.jpg', orientation: ''},
@@ -139,15 +141,15 @@ const albums = ref([
     pictures: [
       {picture: 'elda_01.jpg', orientation: ''},
       {picture: 'elda_03.jpg', orientation: ''},
-      {picture: 'elda_02.jpg', orientation: 'landscape'},
-      {picture: 'elda_04.jpg', orientation: 'landscape'},
+      {picture: 'elda_02.jpg', orientation: ''},
+      {picture: 'elda_04.jpg', orientation: ''},
       {picture: 'elda_06.jpg', orientation: 'landscape'},
       {picture: 'elda_07.jpg', orientation: ''},
       {picture: 'elda_08.jpg', orientation: ''},
-      {picture: 'elda_09.jpg', orientation: 'landscape'},
+      {picture: 'elda_09.jpg', orientation: ''},
       {picture: 'elda_05.jpg', orientation: ''},
       {picture: 'elda_10.jpg', orientation: ''},
-      {picture: 'elda_11.jpg', orientation: 'landscape'},
+      {picture: 'elda_11.jpg', orientation: ''},
       {picture: 'elda_12.jpg', orientation: ''},
       {picture: 'elda_13.jpg', orientation: ''},
       {picture: 'elda_14.jpg', orientation: ''},

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row mt-4 justify-content-center">
+    <div class="row pt-4 justify-content-center" style="padding-bottom: 300px">
       <div
           v-for="campaign in campaigns"
           class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
@@ -20,7 +20,19 @@
 
 <script>
 export default {
-  name: "CapaignsView"
+  name: "CapaignsView",
+  metaInfo() {
+    return {
+      title: "Darko AR | Campaigns",
+      meta: [
+        {name: 'description', content: "Darko's campaign work"},
+        {property: 'og:title', content: "Darko AR | Campaigns"},
+        {property: 'og:site_name', content: 'Darko AR'},
+        {property: 'og:type', content: 'website'},
+        {name: 'robots', content: 'index,follow'}
+      ]
+    }
+  }
 }
 </script>
 
@@ -39,5 +51,4 @@ const campaigns = ref([
 </script>
 
 <style scoped>
-
 </style>
