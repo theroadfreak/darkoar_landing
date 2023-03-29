@@ -46,6 +46,11 @@ const campaigns = ref([
     thumbnail: 'SLM/SLM_Cover.jpg',
     albumName: "salt-milano-montenegro"
   },
+  {
+    name: 'Salt Milano | Portofino',
+    thumbnail: 'SLM_Portofino/cover02.jpg',
+    albumName: "salt-milano-portofino"
+  },
 
 ])
 </script>

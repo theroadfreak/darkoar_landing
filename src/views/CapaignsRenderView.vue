@@ -87,18 +87,53 @@ const albums = ref([
       {picture: 'Salt_Milano_Montenegro_54.jpg', orientation: ''},
     ]
   },
-
   {
-    name: 'bellinda',
-    folder: 'Bellinda/',
-    pictures: [
-      {picture: 'Bellinda_1.jpg', orientation: ''},
-      {picture: 'Bellinda_4.jpg', orientation: ''},
-      {picture: 'Bellinda_5.jpg', orientation: ''},
-      {picture: 'Bellinda_6.jpg', orientation: ''},
-      {picture: 'Bellinda_7.jpg', orientation: ''},
-    ],
-  },
+    name: 'salt-milano-portofino',
+    folder: 'SLM_Portofino/',
+  pictures: [
+    {picture: 'Salt_milano_portofino_tais_0.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_1.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_3.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_4.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_5.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_6.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_7.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_8.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_9.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_10.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_11.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_12.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_13.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_14.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_15.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_16.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_17.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_18.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_20.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_21.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_22.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_24.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_25.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_26.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_27.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_30.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_31.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_33.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_34.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_35.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_36.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_37.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_38.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_39.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_40.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_41.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_42.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_43.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_44.jpg', orientation: 'landscape'},
+
+  ]
+  }
+
 ]);
 onMounted(() => {
   for (let album in albums.value) {
