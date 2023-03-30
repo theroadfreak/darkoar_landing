@@ -105,11 +105,12 @@ const albums = ref([
     {picture: 'Salt_milano_portofino_tais_12.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_13.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_14.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_17.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_15.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_16.jpg', orientation: 'landscape'},
-    {picture: 'Salt_milano_portofino_tais_17.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_18.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_20.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_34.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_21.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_22.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_24.jpg', orientation: 'landscape'},
@@ -118,11 +119,9 @@ const albums = ref([
     {picture: 'Salt_milano_portofino_tais_27.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_30.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_31.jpg', orientation: ''},
-    {picture: 'Salt_milano_portofino_tais_33.jpg', orientation: ''},
-    {picture: 'Salt_milano_portofino_tais_34.jpg', orientation: ''},
+    {picture: 'Salt_milano_portofino_tais_33.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_35.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_36.jpg', orientation: 'landscape'},
-    {picture: 'Salt_milano_portofino_tais_37.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_38.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_39.jpg', orientation: ''},
     {picture: 'Salt_milano_portofino_tais_40.jpg', orientation: ''},
@@ -130,6 +129,7 @@ const albums = ref([
     {picture: 'Salt_milano_portofino_tais_42.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_43.jpg', orientation: 'landscape'},
     {picture: 'Salt_milano_portofino_tais_44.jpg', orientation: 'landscape'},
+    {picture: 'Salt_milano_portofino_tais_37.jpg', orientation: ''},
 
   ]
   }
@@ -148,5 +148,4 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 </style>

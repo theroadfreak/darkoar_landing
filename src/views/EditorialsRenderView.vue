@@ -61,8 +61,13 @@ const albums = ref([
       {picture: 'Andrijana_Ilioska_02.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_03.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_01.jpg', orientation: 'landscape'},
-      {picture: 'Andrijana_Ilioska_00.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_04.jpg', orientation: 'landscape'},
+      {picture: 'Andrijana_Ilioska_06.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_07.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_08.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_09.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_10.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_00.jpg', orientation: ''},
     ]
   },
   {
@@ -163,6 +168,7 @@ const albums = ref([
       {picture: 'iman-totic_1.jpg', orientation: ''},
       {picture: 'iman-totic_2.jpg', orientation: ''},
       {picture: 'iman-totic_3.jpg', orientation: ''},
+      {picture: 'iman-totic_4.jpg', orientation: ''},
     ],
   },
   {
