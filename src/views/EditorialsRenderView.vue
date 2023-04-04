@@ -2,12 +2,12 @@
   <div class="container my-5">
     <div class="row">
       <div v-for="item in picturesToShow.pictures"
-           class="col-12 mb-3"
+           class="col-12 my-auto"
            :class="item.orientation === 'landscape' ? '' : 'col-md-6'">
         <img
             :src="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
             :alt="item.picture"
-            class="w-100 h-auto"
+            class="w-100 h-auto mb-3"
         >
       </div>
     </div>
@@ -188,6 +188,56 @@ const albums = ref([
       {picture: 'vera-hagan-001.jpg', orientation: ''},
       {picture: 'vera-hagan-002.jpg', orientation: ''},
       {picture: 'vera-hagan-003.jpg', orientation: ''},
+    ],
+  },
+  {
+    name: 'alisadacic',
+    folder: 'AlisaDacic/',
+    pictures: [
+      {picture: 'Alisa_Dacic_00.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_01.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_02.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_03.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_04.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_05.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_06.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_07.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_08.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_09.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_010.jpg', orientation: ''},
+      {picture: 'Alisa_Dacic_011.jpg', orientation: ''},
+    ],
+  },
+  {
+    name: 'ilona',
+    folder: 'Ilona/',
+    pictures: [
+      {picture: 'Ilona_01.jpg', orientation: ''},
+      {picture: 'Ilona_03.jpg', orientation: ''},
+      {picture: 'Ilona_04.jpg', orientation: ''},
+      {picture: 'Ilona_05.jpg', orientation: ''},
+    ],
+  },
+  {
+    name: 'milam',
+    folder: 'MilaM/',
+    pictures: [
+      {picture: 'mila_01.jpg', orientation: ''},
+    ],
+  },
+  {
+    name: 'natashaj',
+    folder: 'NatashaJ/',
+    pictures: [
+      {picture: 'Natasha-jovanovic-001.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-002.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-003.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-004.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-005.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-006.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-007.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-008.jpg', orientation: ''},
+      {picture: 'Natasha-jovanovic-009.jpg', orientation: ''},
     ],
   },
 ]);

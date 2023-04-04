@@ -101,5 +101,25 @@ const campaigns = ref([
     thumbnail: 'Vera Hagan/cover.jpg',
     albumName: "vera"
   },
+  {
+    name: 'Alisa Dacic',
+    thumbnail: 'AlisaDacic/cover_AD.jpg',
+    albumName: "alisadacic"
+  },
+  {
+    name: 'Ilona',
+    thumbnail: 'Ilona/Ilona_cover.jpg',
+    albumName: "ilona"
+  },
+  {
+    name: 'MilaM',
+    thumbnail: 'MilaM/mila_cover.jpg',
+    albumName: "milam"
+  },
+  {
+    name: 'NatashaJ',
+    thumbnail: 'NatashaJ/Natasha-cover.jpg',
+    albumName: "natashaj"
+  },
 ])
 </script>

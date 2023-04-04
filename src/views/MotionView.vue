@@ -39,6 +39,8 @@ const videos = ref([
   {link: 'https://player.vimeo.com/video/447224007?h=9650e03106', landscape: 0},
   {link: 'https://player.vimeo.com/video/444217180?h=0e59e0ddbd', landscape: 0},
   {link: 'https://player.vimeo.com/video/444216333?h=f2e1006324', landscape: 0},
+  {link: 'https://player.vimeo.com/video/814566391?h=17cde8c8bc', landscape: 0},
+  {link: 'https://player.vimeo.com/video/813969112?h=9d0d3139ed', landscape: 0},
 ])
 </script>
 
