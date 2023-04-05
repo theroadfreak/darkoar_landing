@@ -3,13 +3,15 @@
     <div class="row">
       <div
           v-for="item in picturesToShow.pictures"
-          class="col-12 my-auto"
+          class="col-12 my-auto image-container"
           :class="item.orientation === 'landscape' ? '' : 'col-md-6'"
       >
+        <!--        :src="require('@/assets/campaigns/'+picturesToShow.folder + item.picture)"
+                    -->
         <img
-            :src="require('@/assets/campaigns/'+picturesToShow.folder + item.picture)"
+            v-lazy="require('@/assets/campaigns/'+picturesToShow.folder + item.picture)"
             :alt="item.picture"
-            class="w-100 h-auto mb-3"
+            class="w-100 h-auto mb-3 image"
         >
       </div>
     </div>
@@ -18,7 +20,8 @@
 
 <script>
 export default {
-  name: "CapaignsRenderView"
+  name: "CapaignsRenderView",
+
 }
 </script>
 
@@ -223,4 +226,5 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 </style>

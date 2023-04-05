@@ -7,7 +7,7 @@
       >
         <router-link class="nav-link" :to="{name: 'editorials-view', params: {albumName: campaign.albumName}}">
           <img
-              :src="require('@/assets/editorials/'+campaign.thumbnail)"
+              v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
               :alt="campaign.name"
               class="w-100"
           >
@@ -48,12 +48,12 @@ const campaigns = ref([
   },
   {
     name: 'Andrijana Ilioska',
-    thumbnail: 'Andrijana/AI_cover.jpg',
+    thumbnail: 'Andrijana/AI_cover.avif',
     albumName: "andrijana_ilioska"
   },
   {
     name: 'Bellinda',
-    thumbnail: 'Bellinda/Belllinda_cover_600x600.jpg',
+    thumbnail: 'Bellinda/Belllinda_cover_600x600.avif',
     albumName: "bellinda"
   },
   {
@@ -78,7 +78,7 @@ const campaigns = ref([
   },
   {
     name: 'Daniels',
-    thumbnail: 'Daniels/cover.jpg',
+    thumbnail: 'Daniels/cover.avif',
     albumName: "daniels"
   },
   {
@@ -103,7 +103,7 @@ const campaigns = ref([
   },
   {
     name: 'Alisa Dacic',
-    thumbnail: 'AlisaDacic/cover_AD.jpg',
+    thumbnail: 'AlisaDacic/cover_AD.avif',
     albumName: "alisadacic"
   },
   {
@@ -112,12 +112,12 @@ const campaigns = ref([
     albumName: "ilona"
   },
   {
-    name: 'MilaM',
+    name: 'Mila',
     thumbnail: 'MilaM/mila_cover.jpg',
     albumName: "milam"
   },
   {
-    name: 'NatashaJ',
+    name: 'Natasha',
     thumbnail: 'NatashaJ/Natasha-cover.jpg',
     albumName: "natashaj"
   },

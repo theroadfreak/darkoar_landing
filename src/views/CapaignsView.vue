@@ -7,7 +7,7 @@
       >
         <router-link class="nav-link" :to="{name: 'campaigns-view', params: {albumName: campaign.albumName}}">
           <img
-              :src="require('@/assets/campaigns/'+campaign.thumbnail)"
+              v-lazy="require('@/assets/campaigns/'+campaign.thumbnail)"
               :alt="campaign.name"
               class="w-100"
           >

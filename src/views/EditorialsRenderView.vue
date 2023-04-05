@@ -5,7 +5,7 @@
            class="col-12 my-auto"
            :class="item.orientation === 'landscape' ? '' : 'col-md-6'">
         <img
-            :src="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
+            v-lazy="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
             :alt="item.picture"
             class="w-100 h-auto mb-3"
         >
