@@ -8,14 +8,18 @@
           class="navbar-brand m-auto d-md-none">
         <img
             :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
+            class="anim"
+            :key="$route.meta.background_black"
+            :class="$route.meta.background_black ? 'bg-white' : ''"
+            width="100"
             alt="Main Logo"
         >
       </router-link>
-      <div class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="navbar-toggler collapsed position-absolute" style="top: 20px; right: 10px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
+        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
+        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
       </div>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav mt-3">
