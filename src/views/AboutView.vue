@@ -7,7 +7,7 @@
           <a
               href="mailto:contact@darkoar.com"
               class="text-decoration-none" style="color: black">
-            contact@darkoar.com
+            darko.mitev97@gmail.com
           </a>
         </p>
       </div>
