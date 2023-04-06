@@ -5,7 +5,7 @@
         <p
             class="text-center fs-5">Bookings and enquires:
           <a
-              href="mailto:contact@darkoar.com"
+              href="mailto:darko.mitev97@gmail.com"
               class="text-decoration-none" style="color: black">
             darko.mitev97@gmail.com
           </a>
