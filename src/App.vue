@@ -6,8 +6,9 @@
       <router-link
           to="/"
           class="navbar-brand m-auto d-md-none">
-        <img src="@/assets/main-logo-black.jpg"
-             alt="Main Logo"
+        <img
+            :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
+            alt="Main Logo"
         >
       </router-link>
       <div class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,9 +40,13 @@
             to="/"
             class="navbar-brand mx-3 d-md-block d-none">
           <img
-              :src="$route.meta.background_black ? require('@/assets/This-logo-white.png') : require('@/assets/This-logo-black.png')"
+              :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
+              class="anim"
+              :key="$route.meta.background_black"
+              :class="$route.meta.background_black ? 'bg-white' : ''"
               alt="Main Logo"
-              width="180">
+              width="180"
+          >
         </router-link>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -72,6 +77,18 @@
 </template>
 
 <style lang="scss">
+.anim {
+  animation: fadeIn 3s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 @font-face {
   font-family: "Quicksand";
   src: local("Quicksand"), url(./fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
@@ -90,7 +107,7 @@
 //fade in transitions
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 2s ease;
 }
 
 .v-enter-from,
@@ -149,5 +166,17 @@
 
 .navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
   transform: rotate(0);
+}
+
+.st0 {
+  font-family: 'Benzin-Semibold', serif;
+}
+
+.st1 {
+  font-size: 90px;
+}
+
+.st2 {
+  letter-spacing: 1px;
 }
 </style>
