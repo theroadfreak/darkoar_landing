@@ -240,6 +240,13 @@ const albums = ref([
       {picture: 'Natasha-jovanovic-009.jpg', orientation: ''},
     ],
   },
+  {
+    name: 'dea',
+    folder: 'Dea/',
+    pictures: [
+      {picture: 'Dea_web.jpg', orientation: ''},
+    ],
+  },
 ]);
 onMounted(() => {
   for (let album in albums.value) {

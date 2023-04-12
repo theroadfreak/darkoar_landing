@@ -103,7 +103,7 @@ const campaigns = ref([
   },
   {
     name: 'Alisa Dacic',
-    thumbnail: 'AlisaDacic/cover_AD.avif',
+    thumbnail: 'AlisaDacic/cover_AD.jpg',
     albumName: "alisadacic"
   },
   {
@@ -120,6 +120,11 @@ const campaigns = ref([
     name: 'Natasha',
     thumbnail: 'NatashaJ/Natasha-cover.jpg',
     albumName: "natashaj"
+  },
+  {
+    name: 'Dea',
+    thumbnail: 'Dea/dea_cover.jpg',
+    albumName: "dea"
   },
 ])
 </script>
