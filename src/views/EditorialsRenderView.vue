@@ -247,6 +247,13 @@ const albums = ref([
       {picture: 'Dea_web.jpg', orientation: ''},
     ],
   },
+  {
+    name: 'elda2',
+    folder: 'Elda2/',
+    pictures: [
+      {picture: 'L1070506-elda.jpg', orientation: ''},
+    ],
+  },
 ]);
 onMounted(() => {
   for (let album in albums.value) {

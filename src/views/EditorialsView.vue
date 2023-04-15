@@ -126,5 +126,10 @@ const campaigns = ref([
     thumbnail: 'Dea/dea_cover.jpg',
     albumName: "dea"
   },
+  {
+    name: 'Elda',
+    thumbnail: 'Elda2/elda-cover.jpg',
+    albumName: "elda2"
+  },
 ])
 </script>
