@@ -123,7 +123,7 @@ const campaigns = ref([
   },
   {
     name: 'Dea',
-    thumbnail: 'Dea/dea_cover.jpg',
+    thumbnail: 'Dea/cover.jpg',
     albumName: "dea"
   },
   {
