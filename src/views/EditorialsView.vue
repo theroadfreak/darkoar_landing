@@ -103,7 +103,7 @@ const campaigns = ref([
   },
   {
     name: 'Alisa Dacic',
-    thumbnail: 'AlisaDacic/cover_AD.jpg',
+    thumbnail: 'AlisaDacic/cover.jpg',
     albumName: "alisadacic"
   },
   {
