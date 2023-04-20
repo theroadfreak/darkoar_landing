@@ -3,7 +3,7 @@
     <div class="row pt-4 justify-content-center" style="padding-bottom: 300px">
       <div
           v-for="campaign in campaigns"
-          class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          class="col-12 col-sm-6 col-md-4 mb-3"
       >
         <router-link class="nav-link" :to="{name: 'campaigns-view', params: {albumName: campaign.albumName}}">
           <img

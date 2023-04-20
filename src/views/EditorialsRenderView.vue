@@ -182,7 +182,7 @@ const albums = ref([
   },
   {
     name: 'vera',
-    folder: 'Vera Hagan/',
+    folder: 'VeraHagan/',
     pictures: [
       {picture: 'vera-hagan-000.jpg', orientation: ''},
       {picture: 'vera-hagan-001.jpg', orientation: ''},

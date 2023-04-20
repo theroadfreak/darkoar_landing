@@ -3,15 +3,19 @@
     <div class="row pt-4 justify-content-center">
       <div
           v-for="campaign in campaigns"
-          class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          class="col-12 col-sm-6 col-md-4 mb-3"
       >
         <router-link class="nav-link" :to="{name: 'editorials-view', params: {albumName: campaign.albumName}}">
-          <img
-              v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
-              :alt="campaign.name"
-              class="w-100"
-          >
-          {{ campaign.name }}
+          <div class="custom-hover-container">
+            <div class="custom-hover-show d-flex align-items-center justify-content-center w-100 h-100">
+              <h5 v-html="campaign.name" class="text-white text-uppercase"></h5>
+            </div>
+            <img
+                v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
+                :alt="campaign.name"
+                class="w-100"
+            >
+          </div>
         </router-link>
       </div>
     </div>
@@ -42,7 +46,7 @@ import {ref} from 'vue';
 
 const campaigns = ref([
   {
-    name: 'Енигма | Antonija Lokvenec',
+    name: 'Antonija Lokvenec <br> <span class="text-lowercase">Енигма</span>',
     thumbnail: 'Enigma/AL_Cover.jpg',
     albumName: "enigma_antonjia_lokvenec"
   },
@@ -97,8 +101,8 @@ const campaigns = ref([
     albumName: "monika"
   },
   {
-    name: 'Vera Hagan',
-    thumbnail: 'Vera Hagan/cover.jpg',
+    name: 'VeraHagan',
+    thumbnail: 'VeraHagan/cover.jpg',
     albumName: "vera"
   },
   {
@@ -133,3 +137,24 @@ const campaigns = ref([
   },
 ])
 </script>
+
+<style scoped>
+.custom-hover-container {
+  position: relative;
+}
+
+.custom-hover-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s ease;
+  opacity: 0;
+  background-color: black;
+}
+
+.custom-hover-show:hover {
+  transition: all 0.7s ease;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 1;
+}
+</style>

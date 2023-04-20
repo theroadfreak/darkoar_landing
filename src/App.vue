@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid"
+  <div class="container"
        style="transition: all 1s"
        :style="$route.meta.background_black ? 'background-color: #000000' : 'background-color: #f3eeec'">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -15,13 +15,26 @@
             alt="Main Logo"
         >
       </router-link>
-      <div class="navbar-toggler collapsed position-absolute" style="top: 20px; right: 10px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="navbar-toggler collapsed position-absolute" style="top: 20px; right: 10px" type="button"
+           data-bs-toggle="collapse" data-bs-target="#navbarNav"
            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
       </div>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <router-link
+            to="/"
+            class="navbar-brand mx-3 d-md-block d-none">
+          <img
+              :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
+              class="anim"
+              :key="$route.meta.background_black"
+              :class="$route.meta.background_black ? 'bg-white' : ''"
+              alt="Main Logo"
+              width="180"
+          >
+        </router-link>
         <ul class="navbar-nav mt-3">
           <li class="nav-item active">
             <router-link
@@ -39,20 +52,6 @@
               MOTION
             </router-link>
           </li>
-        </ul>
-        <router-link
-            to="/"
-            class="navbar-brand mx-3 d-md-block d-none">
-          <img
-              :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
-              class="anim"
-              :key="$route.meta.background_black"
-              :class="$route.meta.background_black ? 'bg-white' : ''"
-              alt="Main Logo"
-              width="180"
-          >
-        </router-link>
-        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" href="/">PORTFOLIO</a>
             <!--             3 fotki video 3 fotki video-->

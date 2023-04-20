@@ -1,8 +1,19 @@
 <template>
   <div class="container">
-    <div class="d-flex w-100 justify-content-center mt-4">
-      <img class="col-12 col-md-10" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">
+    <div class="scrollable-section">
+      <div class="scrollable-wrapper">
+        <img
+            v-for="item in pictures"
+            v-lazy="require('@/assets/' + item.picture)"
+            alt="Image"
+            class="sizing"
+        >
+        <!--        <img src="@/assets/editorials/Elda/elda_07.jpg" alt="">-->
+      </div>
     </div>
+    <!--    <div class="d-flex w-100 justify-content-center mt-4">-->
+    <!--      <img class="col-12 col-md-10" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">-->
+    <!--    </div>-->
   </div>
 </template>
 
@@ -10,7 +21,42 @@
 
 export default {
   name: 'HomeView',
-  components: {
-  }
+  components: {}
 }
 </script>
+
+<script setup>
+import {ref} from 'vue';
+
+const pictures = ref([
+  {picture: "editorials/Enigma/Lokvenec_Lokvenec_06.jpg"},
+  {picture: "editorials/VeraHagan/vera-hagan-000.jpg"},
+  {picture: "editorials/Elda/elda_07.jpg"},
+  {picture: "editorials/Elda/elda_07.jpg"},
+  {picture: "editorials/Elda/elda_07.jpg"},
+
+])
+</script>
+
+<style scoped>
+.scrollable-section {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollable-section::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-wrapper {
+  display: inline-block;
+}
+
+.sizing {
+  height: 600px;
+  width: auto;
+  margin-right: 1rem;
+}
+</style>
