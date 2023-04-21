@@ -52,7 +52,7 @@ import {ref} from 'vue';
 const campaigns = ref([
   {
     name: 'Coming soon',
-    thumbnail: 'Antonija2/cover_antonija.jpg',
+    thumbnail: 'Antonija2/antonija_cover.jpg',
     albumName: "coming-soon"
   },
   {
