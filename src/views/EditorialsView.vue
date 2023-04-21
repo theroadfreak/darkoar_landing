@@ -6,16 +6,13 @@
           class="col-12 col-sm-6 col-md-4 mb-3"
       >
         <router-link class="nav-link" :to="{name: 'editorials-view', params: {albumName: campaign.albumName}}">
-          <div class="custom-hover-container">
-            <div class="custom-hover-show d-flex align-items-center justify-content-center w-100 h-100">
-              <h5 v-html="campaign.name" class="text-white text-uppercase"></h5>
-            </div>
-            <img
-                v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
-                :alt="campaign.name"
-                class="w-100"
-            >
-          </div>
+          <img
+              v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
+              :alt="campaign.name"
+              class="w-100 custom-hover"
+          >
+          {{ campaign.name }}
+
         </router-link>
       </div>
     </div>
@@ -46,7 +43,22 @@ import {ref} from 'vue';
 
 const campaigns = ref([
   {
-    name: 'Antonija Lokvenec <br> <span class="text-lowercase">Енигма</span>',
+    name: 'Elda',
+    thumbnail: 'Elda2/elda-cover.jpg',
+    albumName: "elda2"
+  },
+  {
+    name: 'Dea',
+    thumbnail: 'Dea/cover.jpg',
+    albumName: "dea"
+  },
+  {
+    name: 'Mila',
+    thumbnail: 'MilaM/mila_cover.jpg',
+    albumName: "milam"
+  },
+  {
+    name: 'Antonija Lokvenec - Енигма',
     thumbnail: 'Enigma/AL_Cover.jpg',
     albumName: "enigma_antonjia_lokvenec"
   },
@@ -101,7 +113,7 @@ const campaigns = ref([
     albumName: "monika"
   },
   {
-    name: 'VeraHagan',
+    name: 'Vera Hagan',
     thumbnail: 'VeraHagan/cover.jpg',
     albumName: "vera"
   },
@@ -115,46 +127,26 @@ const campaigns = ref([
     thumbnail: 'Ilona/Ilona_cover.jpg',
     albumName: "ilona"
   },
-  {
-    name: 'Mila',
-    thumbnail: 'MilaM/mila_cover.jpg',
-    albumName: "milam"
-  },
+
   {
     name: 'Natasha',
     thumbnail: 'NatashaJ/Natasha-cover.jpg',
     albumName: "natashaj"
   },
-  {
-    name: 'Dea',
-    thumbnail: 'Dea/cover.jpg',
-    albumName: "dea"
-  },
-  {
-    name: 'Elda',
-    thumbnail: 'Elda2/elda-cover.jpg',
-    albumName: "elda2"
-  },
+
+
 ])
 </script>
 
 <style scoped>
-.custom-hover-container {
-  position: relative;
-}
 
-.custom-hover-show {
-  position: absolute;
-  top: 0;
-  left: 0;
+.custom-hover {
   transition: all 0.7s ease;
-  opacity: 0;
-  background-color: black;
-}
-
-.custom-hover-show:hover {
-  transition: all 0.7s ease;
-  background-color: rgba(0,0,0,0.6);
   opacity: 1;
+}
+
+.custom-hover:hover {
+  transition: all 0.7s ease;
+  opacity: 0.8;
 }
 </style>

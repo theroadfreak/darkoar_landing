@@ -1,5 +1,5 @@
 <template>
-  <div class="container"
+  <div class="container-fluid pt-3"
        style="transition: all 1s"
        :style="$route.meta.background_black ? 'background-color: #000000' : 'background-color: #f3eeec'">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -7,10 +7,9 @@
           to="/"
           class="navbar-brand m-auto d-md-none">
         <img
-            :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
+            :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG-old.svg') : require('@/assets/Darko-PNG.svg')"
             class="anim"
             :key="$route.meta.background_black"
-            :class="$route.meta.background_black ? 'bg-white' : ''"
             width="100"
             alt="Main Logo"
         >
@@ -22,51 +21,50 @@
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
       </div>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <router-link
-            to="/"
-            class="navbar-brand mx-3 d-md-block d-none">
-          <img
-              :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG.svg') : require('@/assets/Darko-PNG.svg')"
-              class="anim"
-              :key="$route.meta.background_black"
-              :class="$route.meta.background_black ? 'bg-white' : ''"
-              alt="Main Logo"
-              width="180"
-          >
-        </router-link>
-        <ul class="navbar-nav mt-3">
-          <li class="nav-item active">
-            <router-link
-                class="nav-link" to="/campaigns" :class="$route.meta.background_black ? 'text-white' : ''"
-            >CAMPAIGNS
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/editorials">
-              EDITORIALS
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/motion">
-              MOTION
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" href="/">PORTFOLIO</a>
-            <!--             3 fotki video 3 fotki video-->
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/prints">
-              PRINTS
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/about">
-              CONTACT
-            </router-link>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container d-flex justify-content-between">
+          <router-link
+              to="/"
+              class="navbar-brand mx-3 d-md-block d-none">
+            <img
+                :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG-old.svg') : require('@/assets/Darko-PNG.svg')"
+                class="anim"
+                :key="$route.meta.background_black"
+                :class="$route.meta.background_black ? 'bg-white' : ''"
+                alt="Main Logo"
+                width="180"
+            >
+          </router-link>
+          <ul class="navbar-nav mt-3 custom-mx">
+            <li class="nav-item active">
+              <router-link
+                  class="nav-link" to="/campaigns" :class="$route.meta.background_black ? 'text-white' : ''"
+              >CAMPAIGNS
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/editorials">
+                EDITORIALS
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/motion">
+                MOTION
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/prints">
+                PRINTS
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :class="$route.meta.background_black ? 'text-white' : ''" to="/about">
+                CONTACT
+              </router-link>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </div>
@@ -80,6 +78,13 @@
 </template>
 
 <style lang="scss">
+@media only screen and (max-width: 770px) {
+  .custom-mx {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .anim {
   animation: fadeIn 3s;
   @keyframes fadeIn {

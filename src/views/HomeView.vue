@@ -1,19 +1,19 @@
 <template>
   <div class="container">
-    <div class="scrollable-section">
-      <div class="scrollable-wrapper">
-        <img
-            v-for="item in pictures"
-            v-lazy="require('@/assets/' + item.picture)"
-            alt="Image"
-            class="sizing"
-        >
-        <!--        <img src="@/assets/editorials/Elda/elda_07.jpg" alt="">-->
-      </div>
-    </div>
-    <!--    <div class="d-flex w-100 justify-content-center mt-4">-->
-    <!--      <img class="col-12 col-md-10" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">-->
-    <!--    </div>-->
+<!--    <div class="scrollable-section">-->
+<!--      <div class="scrollable-wrapper">-->
+<!--        <img-->
+<!--            v-for="item in pictures"-->
+<!--            v-lazy="require('@/assets/' + item.picture)"-->
+<!--            alt="Image"-->
+<!--            class="sizing"-->
+<!--        >-->
+<!--        &lt;!&ndash;        <img src="@/assets/editorials/Elda/elda_07.jpg" alt="">&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+        <div class="d-flex w-100 justify-content-center mt-4">
+          <img class="col-12 col-md-10" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">
+        </div>
   </div>
 </template>
 
