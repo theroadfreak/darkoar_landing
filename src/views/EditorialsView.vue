@@ -5,15 +5,23 @@
           v-for="campaign in campaigns"
           class="col-12 col-sm-6 col-md-4 mb-3"
       >
-        <router-link class="nav-link" :to="{name: 'editorials-view', params: {albumName: campaign.albumName}}">
+        <router-link v-if="campaign.albumName !== 'coming-soon'" class="nav-link"
+                     :to="{name: 'editorials-view', params: {albumName: campaign.albumName}}">
           <img
               v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
               :alt="campaign.name"
               class="w-100 custom-hover"
           >
           {{ campaign.name }}
-
         </router-link>
+        <div v-else class="nav-link">
+          <img
+              v-lazy="require('@/assets/editorials/'+campaign.thumbnail)"
+              :alt="campaign.name"
+              class="w-100 custom-hover"
+          >
+          {{ campaign.name }}
+        </div>
       </div>
     </div>
   </div>
@@ -42,6 +50,11 @@ export default {
 import {ref} from 'vue';
 
 const campaigns = ref([
+  {
+    name: 'Coming soon',
+    thumbnail: 'Antonija2/cover_antonija.jpg',
+    albumName: "coming-soon"
+  },
   {
     name: 'Elda',
     thumbnail: 'Elda2/elda-cover.jpg',
