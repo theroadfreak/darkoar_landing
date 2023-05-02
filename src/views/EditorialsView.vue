@@ -51,9 +51,19 @@ import {ref} from 'vue';
 
 const campaigns = ref([
   {
-    name: 'Coming soon',
+    name: 'Martina Markovska',
+    thumbnail: 'MartinaMarkovska/Cover_Martina.jpg',
+    albumName: "martina-mar"
+  },
+  {
+    name: 'Why me',
     thumbnail: 'Antonija2/antonija_cover.jpg',
-    albumName: "coming-soon"
+    albumName: "antonija2"
+  },
+  {
+    name: 'Monika Mateska',
+    thumbnail: 'MonikaMateska/Cover_Monika.jpg',
+    albumName: "monika-m"
   },
   {
     name: 'Elda',

@@ -82,6 +82,37 @@ const albums = ref([
     ]
   },
   {
+    name: 'antonija2',
+    folder: 'Antonija2/',
+    pictures: [
+      {picture: 'antonija2_1.jpg', orientation: ''},
+      {picture: 'antonija2_2.jpg', orientation: ''},
+      {picture: 'antonija2_4.jpg', orientation: ''},
+    ]
+  },
+  {
+    name: 'martina-mar',
+    folder: 'MartinaMarkovska/',
+    pictures: [
+      {picture: 'Martina-Markovska-001.jpg', orientation: ''},
+      {picture: 'Martina-Markovska-002.jpg', orientation: ''},
+      {picture: 'Martina-Markovska-003.jpg', orientation: ''},
+      {picture: 'Martina-Markovska-004.jpg', orientation: ''},
+      {picture: 'Martina-Markovska-005.jpg', orientation: ''},
+    ]
+  },
+  {
+    name: 'monika-m',
+    folder: 'MonikaMateska/',
+    pictures: [
+      {picture: 'monika_mateska_01.jpg', orientation: ''},
+      {picture: 'monika_mateska_02.jpg', orientation: ''},
+      {picture: 'monika_mateska_04.jpg', orientation: ''},
+      {picture: 'monika_mateska_03.jpg', orientation: ''},
+      {picture: 'monika_mateska_06.jpg', orientation: ''},
+    ]
+  },
+  {
     name: 'matea-mateska',
     folder: 'MateaM/',
     pictures: [
