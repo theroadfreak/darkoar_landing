@@ -7,28 +7,28 @@
           to="/"
           class="navbar-brand m-auto d-md-none">
         <img
-            :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG-old.svg') : require('@/assets/Darko-PNG.svg')"
+            :src="$route.meta.background_black ? require('@/assets/jpglogoblack.jpg') : require('@/assets/Darko-PNG.svg')"
             class="anim"
             :key="$route.meta.background_black"
+            :class="$route.meta.background_black ? 'bg-white' : ''"
             width="100"
             alt="Main Logo"
         >
       </router-link>
-      <div class="navbar-toggler collapsed position-absolute" style="top: 20px; right: 10px" type="button"
+      <div class="navbar-toggler collapsed position-absolute border-0 p-0" style="top: 20px; right: 10px" type="button"
            data-bs-toggle="collapse" data-bs-target="#navbarNav"
            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
-        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
-        <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
+        <span class="navbar-toggler-icon" :class="$route.meta.background_black ? ' navbar-dark' : ''"></span>
       </div>
       <div class="collapse show navbar-collapse" id="navbarNav">
         <div class="container d-flex justify-content-between">
           <router-link
               to="/"
               class="navbar-brand mx-3 d-md-block d-none">
+            <!--                :src="require('@/assets/Darko-PNG.svg')"-->
             <img
-                :src="$route.meta.background_black ? require('@/assets/Darko-black-PNG-old.svg') : require('@/assets/Darko-PNG.svg')"
-                class="anim"
+            :src="$route.meta.background_black ? require('@/assets/jpglogoblack.jpg') : require('@/assets/Darko-PNG.svg')"
+            class="anim"
                 :key="$route.meta.background_black"
                 :class="$route.meta.background_black ? 'bg-white' : ''"
                 alt="Main Logo"
@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
 </script>
 
 <style lang="scss">
@@ -135,59 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
-}
-
-//navbar colapse animation
-.navbar-toggler {
-  background: none;
-  border: none;
-}
-
-.navbar-toggler:active,
-.navbar-toggler:focus {
-  outline: 0;
-}
-
-.navbar-toggler .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  margin: 4px 0 4px 0;
-  transition: all 0.2s;
-  background-color: black;
-}
-
-.navbar-dark .navbar-toggler .icon-bar {
-  background: #ffffff;
-}
-
-.navbar-toggler .icon-bar:nth-of-type(1) {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-
-.navbar-toggler .icon-bar:nth-of-type(2) {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.navbar-toggler .icon-bar:nth-of-type(3) {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-
-.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
-  transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
-  transform: rotate(0);
 }
 
 .st0 {
