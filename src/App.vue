@@ -25,7 +25,6 @@
           <router-link
               to="/"
               class="navbar-brand mx-3 d-md-block d-none">
-            <!--                :src="require('@/assets/Darko-PNG.svg')"-->
             <img
             :src="$route.meta.background_black ? require('@/assets/jpglogoblack.jpg') : require('@/assets/Darko-PNG.svg')"
             class="anim"
