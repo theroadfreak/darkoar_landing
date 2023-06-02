@@ -11,8 +11,10 @@
 <!--        &lt;!&ndash;        <img src="@/assets/editorials/Elda/elda_07.jpg" alt="">&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
-        <div class="d-flex w-100 justify-content-center mt-4">
-          <img class="col-12 col-md-10" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">
+        <div class="w-100 d-flex justify-content-center mt-4">
+          <router-link class="col-12 col-md-10" to="/campaigns-view/salt-milano-montenegro">
+            <img class="col-12" src="@/assets/homepage/saltmilano_cover.jpg" alt="Homepage piture">
+          </router-link>
         </div>
   </div>
 </template>

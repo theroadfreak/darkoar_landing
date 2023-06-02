@@ -21,7 +21,7 @@
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
         <span class="icon-bar" :class="$route.meta.background_black ? 'bg-white' : ''"></span>
       </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse show navbar-collapse" id="navbarNav">
         <div class="container d-flex justify-content-between">
           <router-link
               to="/"
