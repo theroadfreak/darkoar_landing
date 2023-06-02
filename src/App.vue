@@ -36,9 +36,11 @@
             >
           </router-link>
           <ul class="navbar-nav mt-3 custom-mx">
-            <li class="nav-item active">
+            <li class="nav-item">
               <router-link
-                  class="nav-link" to="/campaigns" :class="$route.meta.background_black ? 'text-white' : ''"
+                  class="nav-link"
+                  to="/campaigns"
+                  :class="$route.meta.background_black ? 'text-white' : ''"
               >CAMPAIGNS
               </router-link>
             </li>
@@ -64,7 +66,6 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
   </div>
@@ -76,6 +77,19 @@
     </Transition>
   </div>
 </template>
+
+<script setup>
+document.addEventListener('DOMContentLoaded', function () {
+  let navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  navbarLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      let navbarCollapse = document.querySelector('.navbar-collapse');
+      navbarCollapse.classList.remove('show');
+    });
+  });
+});
+
+</script>
 
 <style lang="scss">
 @media only screen and (max-width: 770px) {
