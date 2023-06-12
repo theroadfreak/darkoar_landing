@@ -53,6 +53,18 @@ const albums = ref([
       {picture: 'Lokvenec_Lokvenec_017.jpg', orientation: 'landscape'},
       {picture: 'Lokvenec_Lokvenec_018.jpg', orientation: 'landscape'},
     ]
+  },{
+    name: 'katerina',
+    folder: 'Katerina/',
+    pictures: [
+      {picture: 'L1030308(2) copy (1).jpg', orientation: ''},
+      {picture: 'L1030375-1.jpg', orientation: ''},
+      {picture: 'L1030418(1) copy.jpg', orientation: ''},
+      {picture: 'L1030426 copy.jpg', orientation: ''},
+      {picture: 'L1030720-1.jpg', orientation: ''},
+      {picture: 'L1040236 copy1.jpg', orientation: ''},
+      {picture: 'L1040249 copy final copy1.jpg', orientation: ''},
+    ]
   },
   {
     name: 'andrijana_ilioska',

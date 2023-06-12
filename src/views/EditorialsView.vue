@@ -51,6 +51,11 @@ import {ref} from 'vue';
 
 const campaigns = ref([
   {
+    name: 'Katerina',
+    thumbnail: 'Katerina/cover_kaatrina.jpg',
+    albumName: "katerina"
+  },
+  {
     name: 'Martina Markovska',
     thumbnail: 'MartinaMarkovska/Cover_Martina.jpg',
     albumName: "martina-mar"
