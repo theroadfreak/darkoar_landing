@@ -30,7 +30,6 @@ import {ref} from 'vue'
 
 const videos = ref([
   {link: 'https://player.vimeo.com/video/831307802?h=bd61af742b&byline=0'},
-  {link: 'https://player.vimeo.com/video/814566391?h=17cde8c8bc&byline=0'},
   {link: 'https://player.vimeo.com/video/812779624?h=d45645d64b&byline=0'},
   {link: 'https://player.vimeo.com/video/813969112?h=9d0d3139ed&byline=0'},
   {link: 'https://player.vimeo.com/video/717301753?h=e27e1ef72f&byline=0'},
