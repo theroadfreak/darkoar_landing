@@ -52,7 +52,7 @@ import {ref} from 'vue';
 const campaigns = ref([
   {
     name: 'Andrijana Ilioska',
-    thumbnail: 'Andrijana/AI_cover.avif',
+    thumbnail: 'Andrijana/ai_cover.jpg',
     albumName: "andrijana_ilioska"
   },
   {
