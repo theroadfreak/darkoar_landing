@@ -248,6 +248,7 @@ const albums = ref([
       {picture: 'elda_13.jpg', orientation: ''},
       {picture: 'elda_14.jpg', orientation: ''},
       {picture: 'elda_15.jpg', orientation: ''},
+      {picture: 'elda_22.jpg', orientation: ''},
     ],
   },
   {
@@ -336,13 +337,7 @@ const albums = ref([
       {picture: 'Dea_web.jpg', orientation: ''},
     ],
   },
-  {
-    name: 'elda2',
-    folder: 'Elda2/',
-    pictures: [
-      {picture: 'L1070506-elda.jpg', orientation: ''},
-    ],
-  },
+
 ]);
 onMounted(() => {
   for (let album in albums.value) {

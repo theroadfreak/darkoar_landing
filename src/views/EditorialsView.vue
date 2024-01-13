@@ -51,8 +51,13 @@ import {ref} from 'vue';
 
 const campaigns = ref([
   {
+    name: 'Andrijana Ilioska',
+    thumbnail: 'Andrijana/AI_cover.avif',
+    albumName: "andrijana_ilioska"
+  },
+  {
     name: 'Katerina',
-    thumbnail: 'Katerina/cover_kaatrina.jpg',
+    thumbnail: 'Katerina/ki_cover.jpg',
     albumName: "katerina"
   },
   {
@@ -103,11 +108,6 @@ const campaigns = ref([
     albumName: "enigma_antonjia_lokvenec"
   },
   {
-    name: 'Andrijana Ilioska',
-    thumbnail: 'Andrijana/AI_cover.avif',
-    albumName: "andrijana_ilioska"
-  },
-  {
     name: 'Bellinda',
     thumbnail: 'Bellinda/Belllinda_cover_600x600.avif',
     albumName: "bellinda"
@@ -136,11 +136,6 @@ const campaigns = ref([
     name: 'Daniels',
     thumbnail: 'Daniels/cover.avif',
     albumName: "daniels"
-  },
-  {
-    name: 'Elda',
-    thumbnail: 'Elda2/elda-cover.jpg',
-    albumName: "elda2"
   },
   {
     name: 'Iman Totic',
