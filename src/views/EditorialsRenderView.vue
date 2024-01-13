@@ -29,6 +29,26 @@ const props = defineProps({
 const picturesToShow = ref({folder: '', pictures: []});
 const albums = ref([
   {
+    name: 'marija',
+    folder: 'Marija/',
+    pictures: [
+      {picture: 'marija_01.jpg', orientation: ''},
+      {picture: 'marija_02.jpg', orientation: ''},
+      {picture: 'marija_03.jpg', orientation: ''},
+      {picture: 'marija_04.jpg', orientation: ''},
+      {picture: 'marija_05.jpg', orientation: ''},
+    ]
+  },
+  {
+    name: 'ilarija',
+    folder: 'Ilarija/',
+    pictures: [
+      {picture: 'ilarija_01.jpg', orientation: ''},
+      {picture: 'ilarija_02.jpg', orientation: ''},
+      {picture: 'ilarija_03.jpg', orientation: ''},
+    ]
+  },
+  {
     name: 'enigma_antonjia_lokvenec',
     folder: 'Enigma/',
     pictures: [
@@ -57,6 +77,20 @@ const albums = ref([
     name: 'katerina',
     folder: 'Katerina/',
     pictures: [
+      {picture: 'katerina_01.jpg', orientation: ''},
+      {picture: 'katerina_02.jpg', orientation: ''},
+      {picture: 'katerina_03.jpg', orientation: ''},
+      {picture: 'katerina_04.jpg', orientation: ''},
+      {picture: 'katerina_05.jpg', orientation: ''},
+      {picture: 'katerina_06.jpg', orientation: ''},
+      {picture: 'katerina_07.jpg', orientation: 'landscape'},
+      {picture: 'katerina_09.jpg', orientation: 'landscape'},
+      {picture: 'katerina_10.jpg', orientation: 'landscape'},
+      {picture: 'katerina_11.jpg', orientation: 'landscape'},
+      {picture: 'katerina_12.jpg', orientation: 'landscape'},
+      {picture: 'katerina_08.jpg', orientation: ''},
+
+      //
       {picture: 'L1030308(2) copy (1).jpg', orientation: ''},
       {picture: 'L1030375-1.jpg', orientation: ''},
       {picture: 'L1030418(1) copy.jpg', orientation: ''},
@@ -70,6 +104,11 @@ const albums = ref([
     name: 'andrijana_ilioska',
     folder: 'Andrijana/',
     pictures: [
+      {picture: 'Andrijana_Ilioska_11.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_12.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_13.jpg', orientation: ''},
+      {picture: 'Andrijana_Ilioska_14.jpg', orientation: ''},
+      //
       {picture: 'Andrijana_Ilioska_02.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_03.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_01.jpg', orientation: 'landscape'},
@@ -187,6 +226,13 @@ const albums = ref([
     name: 'elda',
     folder: 'Elda/',
     pictures: [
+      {picture: 'elda_16.jpg', orientation: ''},
+      {picture: 'elda_17.jpg', orientation: ''},
+      {picture: 'elda_18.jpg', orientation: ''},
+      {picture: 'elda_19.jpg', orientation: ''},
+      {picture: 'elda_20.jpg', orientation: 'landscape'},
+      {picture: 'elda_21.jpg', orientation: ''},
+      //
       {picture: 'elda_01.jpg', orientation: ''},
       {picture: 'elda_03.jpg', orientation: ''},
       {picture: 'elda_02.jpg', orientation: ''},

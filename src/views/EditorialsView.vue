@@ -56,6 +56,17 @@ const campaigns = ref([
     albumName: "katerina"
   },
   {
+    name: 'Marija',
+    thumbnail: 'Marija/marija_cover.jpg',
+    albumName: "marija"
+  },
+  {
+    name: 'Ilarija',
+    thumbnail: 'Ilarija/il_cover.jpg',
+    albumName: "ilarija"
+  },
+
+  {
     name: 'Martina Markovska',
     thumbnail: 'MartinaMarkovska/Cover_Martina.jpg',
     albumName: "martina-mar"
@@ -72,9 +83,10 @@ const campaigns = ref([
   },
   {
     name: 'Elda',
-    thumbnail: 'Elda2/elda-cover.jpg',
-    albumName: "elda2"
+    thumbnail: 'Elda/cover-_elda_1.jpg',
+    albumName: "elda"
   },
+
   {
     name: 'Dea',
     thumbnail: 'Dea/cover.jpg',
@@ -127,8 +139,8 @@ const campaigns = ref([
   },
   {
     name: 'Elda',
-    thumbnail: 'Elda/cover-_elda_1.jpg',
-    albumName: "elda"
+    thumbnail: 'Elda2/elda-cover.jpg',
+    albumName: "elda2"
   },
   {
     name: 'Iman Totic',
