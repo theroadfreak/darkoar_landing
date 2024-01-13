@@ -4,7 +4,14 @@
       <div v-for="item in picturesToShow.pictures"
            class="col-12 my-auto"
            :class="item.orientation === 'landscape' ? '' : 'col-md-6'">
+        <div class="" v-if="item.picture === 'line' ">
+          <div class="d-flex flex-column align-items-end">
+            <small class="float-end">Date: {{ item.title }}</small>
+          </div>
+          <hr />
+        </div>
         <img
+            v-else
             v-lazy="require('@/assets/editorials/'+picturesToShow.folder + item.picture)"
             :alt="item.picture"
             class="w-100 h-auto mb-3"
@@ -77,20 +84,21 @@ const albums = ref([
     name: 'katerina',
     folder: 'Katerina/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '16 September 2023'},
+      {picture: 'katerina_12.jpg', orientation: 'landscape'},
       {picture: 'katerina_01.jpg', orientation: ''},
       {picture: 'katerina_02.jpg', orientation: ''},
+      {picture: 'katerina_10.jpg', orientation: 'landscape'},
       {picture: 'katerina_03.jpg', orientation: ''},
       {picture: 'katerina_04.jpg', orientation: ''},
       {picture: 'katerina_05.jpg', orientation: ''},
       {picture: 'katerina_06.jpg', orientation: ''},
       {picture: 'katerina_07.jpg', orientation: 'landscape'},
       {picture: 'katerina_09.jpg', orientation: 'landscape'},
-      {picture: 'katerina_10.jpg', orientation: 'landscape'},
       {picture: 'katerina_11.jpg', orientation: 'landscape'},
-      {picture: 'katerina_12.jpg', orientation: 'landscape'},
       {picture: 'katerina_08.jpg', orientation: ''},
-
       //
+      {picture: 'line', orientation: 'landscape' ,title: '26 May 2023'},
       {picture: 'L1030308(2) copy (1).jpg', orientation: ''},
       {picture: 'L1030375-1.jpg', orientation: ''},
       {picture: 'L1030418(1) copy.jpg', orientation: ''},
@@ -104,21 +112,25 @@ const albums = ref([
     name: 'andrijana_ilioska',
     folder: 'Andrijana/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '28 December 2023'},
       {picture: 'Andrijana_Ilioska_11.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_12.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_13.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_14.jpg', orientation: ''},
       //
+      {picture: 'line', orientation: 'landscape' ,title: '17 January 2023'},
       {picture: 'Andrijana_Ilioska_02.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_03.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_01.jpg', orientation: 'landscape'},
       {picture: 'Andrijana_Ilioska_04.jpg', orientation: 'landscape'},
+      {picture: 'Andrijana_Ilioska_00.jpg', orientation: ''},
+        //
+      {picture: 'line', orientation: 'landscape' ,title: '7 August 2022'},
       {picture: 'Andrijana_Ilioska_06.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_07.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_08.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_09.jpg', orientation: ''},
       {picture: 'Andrijana_Ilioska_10.jpg', orientation: ''},
-      {picture: 'Andrijana_Ilioska_00.jpg', orientation: ''},
     ]
   },
   {
@@ -226,6 +238,7 @@ const albums = ref([
     name: 'elda',
     folder: 'Elda/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '25 December 2023'},
       {picture: 'elda_16.jpg', orientation: ''},
       {picture: 'elda_17.jpg', orientation: ''},
       {picture: 'elda_18.jpg', orientation: ''},
@@ -233,6 +246,7 @@ const albums = ref([
       {picture: 'elda_20.jpg', orientation: 'landscape'},
       {picture: 'elda_21.jpg', orientation: ''},
       //
+      {picture: 'line', orientation: 'landscape' ,title: '12 March 2023'},
       {picture: 'elda_01.jpg', orientation: ''},
       {picture: 'elda_03.jpg', orientation: ''},
       {picture: 'elda_02.jpg', orientation: ''},
@@ -248,6 +262,8 @@ const albums = ref([
       {picture: 'elda_13.jpg', orientation: ''},
       {picture: 'elda_14.jpg', orientation: ''},
       {picture: 'elda_15.jpg', orientation: ''},
+      {picture: 'line', orientation: 'landscape' ,title: '1 April 2023'},
+
       {picture: 'elda_22.jpg', orientation: ''},
     ],
   },

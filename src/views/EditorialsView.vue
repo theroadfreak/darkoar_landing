@@ -22,6 +22,7 @@
           >
           {{ campaign.name }}
         </div>
+
       </div>
     </div>
   </div>
