@@ -8,7 +8,14 @@
       >
         <!--        :src="require('@/assets/campaigns/'+picturesToShow.folder + item.picture)"
                     -->
+        <div class="" v-if="item.picture === 'line' ">
+          <div class="d-flex flex-column align-items-end">
+            <small class="float-end">Date: {{ item.title }}</small>
+          </div>
+          <hr />
+        </div>
         <img
+            v-else
             v-lazy="require('@/assets/campaigns/'+picturesToShow.folder + item.picture)"
             :alt="item.picture"
             class="w-100 h-auto mb-3 image"
@@ -37,6 +44,8 @@ const albums = ref([
     name: 'salt-milano-montenegro',
     folder: 'SLM/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '28 August 2022'},
+
       {picture: 'Salt_Milano_Montenegro_0.jpg', orientation: 'landscape'},
       {picture: 'Salt_Milano_Montenegro_1.jpg', orientation: ''},
       {picture: 'Salt_Milano_Montenegro_23.jpg', orientation: ''},
@@ -98,6 +107,8 @@ const albums = ref([
     name: 'salt-milano-portofino',
     folder: 'SLM_Portofino/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '25 May 2022'},
+
       {picture: 'Salt_milano_portofino_tais_0.jpg', orientation: ''},
       {picture: 'Salt_milano_portofino_tais_1.jpg', orientation: ''},
       {picture: 'Salt_milano_portofino_tais_3.jpg', orientation: 'landscape'},
@@ -144,6 +155,8 @@ const albums = ref([
     name: 'salt-milano-greece',
     folder: 'SLM_Greece/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '19 July 2021'},
+
       {picture: 'Salt-milano-vourvourou-greece-002.jpg', orientation: 'landscape'},
       {picture: 'Salt-milano-vourvourou-greece-0028.jpg', orientation: ''},
       {picture: 'Salt-milano-vourvourou-greece-0022.jpg', orientation: ''},
