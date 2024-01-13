@@ -39,6 +39,8 @@ const albums = ref([
     name: 'marija',
     folder: 'Marija/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '26 September 2023'},
+
       {picture: 'marija_01.jpg', orientation: ''},
       {picture: 'marija_02.jpg', orientation: ''},
       {picture: 'marija_03.jpg', orientation: ''},
@@ -50,15 +52,19 @@ const albums = ref([
     name: 'ilarija',
     folder: 'Ilarija/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '25 September 2023'},
+
       {picture: 'ilarija_01.jpg', orientation: ''},
       {picture: 'ilarija_02.jpg', orientation: ''},
       {picture: 'ilarija_03.jpg', orientation: ''},
     ]
   },
   {
-    name: 'enigma_antonjia_lokvenec',
+    name: 'antonija2',
     folder: 'Enigma/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '8 March 2023 - Enigma'},
+
       {picture: 'Lokvenec_Lokvenec_00.jpg', orientation: ''},
       {picture: 'Lokvenec_Lokvenec_01.jpg', orientation: ''},
       {picture: 'Lokvenec_Lokvenec_02.jpg', orientation: ''},
@@ -79,6 +85,11 @@ const albums = ref([
       {picture: 'Lokvenec_Lokvenec_016.jpg', orientation: 'landscape'},
       {picture: 'Lokvenec_Lokvenec_017.jpg', orientation: 'landscape'},
       {picture: 'Lokvenec_Lokvenec_018.jpg', orientation: 'landscape'},
+      {picture: 'line', orientation: 'landscape' ,title: '22 March 2023 - Why me'},
+
+      {picture: 'antonija2_1.jpg', orientation: ''},
+      {picture: 'antonija2_2.jpg', orientation: ''},
+      {picture: 'antonija2_4.jpg', orientation: ''},
     ]
   },{
     name: 'katerina',
@@ -137,6 +148,8 @@ const albums = ref([
     name: 'bellinda',
     folder: 'Bellinda/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '4 March 2021'},
+
       {picture: 'Bellinda_1.jpg', orientation: 'landscape'},
       {picture: 'Bellinda_4.jpg', orientation: ''},
       {picture: 'Bellinda_5.jpg', orientation: ''},
@@ -144,19 +157,13 @@ const albums = ref([
       {picture: 'Bellinda_7.jpg', orientation: ''}
     ]
   },
-  {
-    name: 'antonija2',
-    folder: 'Antonija2/',
-    pictures: [
-      {picture: 'antonija2_1.jpg', orientation: ''},
-      {picture: 'antonija2_2.jpg', orientation: ''},
-      {picture: 'antonija2_4.jpg', orientation: ''},
-    ]
-  },
+
   {
     name: 'martina-mar',
     folder: 'MartinaMarkovska/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '7 March 2019'},
+
       {picture: 'Martina-Markovska-001.jpg', orientation: ''},
       {picture: 'Martina-Markovska-002.jpg', orientation: ''},
       {picture: 'Martina-Markovska-003.jpg', orientation: ''},
@@ -168,17 +175,26 @@ const albums = ref([
     name: 'monika-m',
     folder: 'MonikaMateska/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '3 February 2023'},
+
       {picture: 'monika_mateska_01.jpg', orientation: ''},
       {picture: 'monika_mateska_02.jpg', orientation: ''},
       {picture: 'monika_mateska_04.jpg', orientation: ''},
       {picture: 'monika_mateska_03.jpg', orientation: ''},
       {picture: 'monika_mateska_06.jpg', orientation: ''},
+
+      {picture: 'line', orientation: 'landscape' ,title: '14 May 2022'},
+      {picture: 'monika_mateska_0.jpg', orientation: 'landscape'},
+      {picture: 'monika_mateska_1.jpg', orientation: ''},
+      {picture: 'monika_mateska_2.jpg', orientation: ''},
     ]
   },
   {
     name: 'matea-mateska',
     folder: 'MateaM/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '6 September 2021'},
+
       {picture: 'matea_web_1.jpg', orientation: ''},
       {picture: 'matea_web_2.jpg', orientation: ''},
       {picture: 'matea_web_3.jpg', orientation: ''},
@@ -198,6 +214,8 @@ const albums = ref([
     name: 'pixel-web',
     folder: 'PixelWeb/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '18 July 2021'},
+
       {picture: 'Pixel.qt_1.jpg', orientation: ''},
       {picture: 'Pixel.qt_2.jpg', orientation: ''},
       {picture: 'Pixel.qt_3.jpg', orientation: ''},
@@ -211,6 +229,8 @@ const albums = ref([
     name: 'teodora',
     folder: 'Teodora/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '17 July 2020'},
+
       {picture: 'teodora_srb_04.jpg', orientation: ''},
       {picture: 'teodora_srb_02.jpg', orientation: ''},
       {picture: 'teodora_srb_03.jpg', orientation: ''},
@@ -222,6 +242,7 @@ const albums = ref([
     name: 'viktorija-risteska',
     folder: 'ViktorijaR/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '19 January 2020'},
       {picture: 'victorija_r_01.jpg', orientation: ''},
       {picture: 'victorija_r_02.jpg', orientation: ''},
     ],
@@ -230,6 +251,7 @@ const albums = ref([
     name: 'daniels',
     folder: 'Daniels/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '2 June 2022'},
       {picture: 'JDaniels_1.jpg', orientation: ''},
       {picture: 'JDaniels_2.jpg', orientation: 'landscape'},
     ],
@@ -271,25 +293,19 @@ const albums = ref([
     name: 'iman',
     folder: 'ImanT/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '8 October 2021'},
       {picture: 'iman-totic_1.jpg', orientation: ''},
       {picture: 'iman-totic_2.jpg', orientation: ''},
       {picture: 'iman-totic_3.jpg', orientation: ''},
       {picture: 'iman-totic_4.jpg', orientation: ''},
     ],
   },
-  {
-    name: 'monika',
-    folder: 'Monika/',
-    pictures: [
-      {picture: 'monika_mateska_0.jpg', orientation: 'landscape'},
-      {picture: 'monika_mateska_1.jpg', orientation: ''},
-      {picture: 'monika_mateska_2.jpg', orientation: ''},
-    ],
-  },
+
   {
     name: 'vera',
     folder: 'VeraHagan/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '17 December 2021'},
       {picture: 'vera-hagan-000.jpg', orientation: ''},
       {picture: 'vera-hagan-001.jpg', orientation: ''},
       {picture: 'vera-hagan-002.jpg', orientation: ''},
@@ -300,6 +316,8 @@ const albums = ref([
     name: 'alisadacic',
     folder: 'AlisaDacic/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '28 July 2021'},
+
       {picture: 'Alisa_Dacic_00.jpg', orientation: ''},
       {picture: 'Alisa_Dacic_01.jpg', orientation: ''},
       {picture: 'Alisa_Dacic_02.jpg', orientation: ''},
@@ -318,6 +336,7 @@ const albums = ref([
     name: 'ilona',
     folder: 'Ilona/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '22 February 2022'},
       {picture: 'Ilona_01.jpg', orientation: ''},
       {picture: 'Ilona_03.jpg', orientation: ''},
       {picture: 'Ilona_04.jpg', orientation: ''},
@@ -335,6 +354,7 @@ const albums = ref([
     name: 'natashaj',
     folder: 'NatashaJ/',
     pictures: [
+      {picture: 'line', orientation: 'landscape' ,title: '15 March 2020'},
       {picture: 'Natasha-jovanovic-001.jpg', orientation: ''},
       {picture: 'Natasha-jovanovic-002.jpg', orientation: ''},
       {picture: 'Natasha-jovanovic-003.jpg', orientation: ''},

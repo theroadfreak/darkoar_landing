@@ -78,7 +78,7 @@ const campaigns = ref([
     albumName: "martina-mar"
   },
   {
-    name: 'Why me',
+    name: 'Antonija Lokvenec',
     thumbnail: 'Antonija2/antonija_cover.jpg',
     albumName: "antonija2"
   },
@@ -103,11 +103,7 @@ const campaigns = ref([
     thumbnail: 'MilaM/mila_cover.jpg',
     albumName: "milam"
   },
-  {
-    name: 'Antonija Lokvenec - Енигма',
-    thumbnail: 'Enigma/AL_Cover.jpg',
-    albumName: "enigma_antonjia_lokvenec"
-  },
+
   {
     name: 'Bellinda',
     thumbnail: 'Bellinda/Belllinda_cover_600x600.avif',
@@ -143,11 +139,7 @@ const campaigns = ref([
     thumbnail: 'ImanT/cover.jpg',
     albumName: "iman"
   },
-  {
-    name: 'Monika',
-    thumbnail: 'Monika/cover.jpg',
-    albumName: "monika"
-  },
+
   {
     name: 'Vera Hagan',
     thumbnail: 'VeraHagan/cover.jpg',
