@@ -269,6 +269,7 @@ const albums = ref([
       {picture: 'elda_21.jpg', orientation: ''},
       //
       {picture: 'line', orientation: 'landscape' ,title: '12 March 2023'},
+      {picture: 'elda_23.jpg', orientation: ''},
       {picture: 'elda_01.jpg', orientation: ''},
       {picture: 'elda_03.jpg', orientation: ''},
       {picture: 'elda_02.jpg', orientation: ''},
@@ -284,6 +285,7 @@ const albums = ref([
       {picture: 'elda_13.jpg', orientation: ''},
       {picture: 'elda_14.jpg', orientation: ''},
       {picture: 'elda_15.jpg', orientation: ''},
+
       {picture: 'line', orientation: 'landscape' ,title: '1 April 2023'},
 
       {picture: 'elda_22.jpg', orientation: ''},
